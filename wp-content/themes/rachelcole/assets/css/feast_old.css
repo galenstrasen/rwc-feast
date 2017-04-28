@@ -1,0 +1,1370 @@
+
+	@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novaregular_italic';
+    src: url('../fonts/proximanova-regularit-webfont.eot');
+    src: url('../fonts/proximanova-regularit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regularit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regularit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regularit-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regularit-webfont.svg#proxima_novaregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family:'AGaramondPro-Regular';
+	src: url('../fonts/AGaramondPro-Regular_gdi.eot');
+	src: url('../fonts/AGaramondPro-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/AGaramondPro-Regular_gdi.woff') format('woff'),
+		 url('../fonts/AGaramondPro-Regular_gdi.ttf') format('truetype'),
+		 url('../fonts/AGaramondPro-Regular_gdi.otf') format('opentype'),
+		 url('../fonts/AGaramondPro-Regular_gdi.svg#AGaramondPro-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'AGaramondPro-Italic';
+	src: url('../fonts/AGaramondPro-Italic_gdi.eot');
+	src: url('../fonts/AGaramondPro-Italic_gdi.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/AGaramondPro-Italic_gdi.woff') format('woff'),
+		 url('../fonts/AGaramondPro-Italic_gdi.ttf') format('truetype'),
+		 url('../fonts/AGaramondPro-Italic_gdi.otf') format('opentype'),
+		 url('../fonts/AGaramondPro-Italic_gdi.svg#AGaramondPro-Italic') format('svg');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+}
+   
+   
+   
+
+/* ==========================================================================
+  DEFAULTS
+   ========================================================================== */
+
+   
+   
+html {
+    font-size: 1.3em;
+    line-height: 125%;
+}
+body{
+	position: relative;
+	color: #000;
+	font-family:'proxima_nova_rgregular';
+	font-weight: normal;
+	font-style: normal;
+	background:#fdfbfa;
+	margin:0;
+	font-size:18px;
+}
+
+body a{
+	color: #4e4139;
+	text-decoration: none;
+	-webkit-transition: color 0.2s ease-in 0s;
+    -moz-transition: color 0.2s ease-in 0s;
+    -o-transition: color 0.2s ease-in 0s;
+    transition: color 0.2s ease-in 0s;
+}
+body a:hover{
+	text-decoration: underline;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 2.2em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.fixed{
+	width:100%;
+	top:0;
+	left:0;
+	z-index:999999;
+}
+
+
+	
+	img{max-width:100%;
+		height:auto !important;}	
+	
+	.half{width:48%;}
+	.fleft{float:left;}
+	.fright{float:right;}
+	.one_third{width:31%;}
+	.two_thirds{width:64%;}
+	
+	h2{font-family: 'proxima_nova_rgregular';
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-size:14px;
+		margin:0;
+		padding:0;
+		color:#000;
+		font-weight:bold;
+		line-height:150%;
+		}
+	h2.serif{font-family: 'AGaramondPro-Regular';
+		text-transform:none;
+		font-size:16pt;
+		font-weight:normal;
+		letter-spacing:1px;}
+	h2.large{font-size:30px;
+		text-transform:none;}
+	h2.blue{color:#255592;
+		text-transform:none;}
+	
+	.underline {
+		text-align:center;
+		margin:20px 0;
+	}
+	
+	.underline span{border-bottom:solid 1px #000;
+		padding-bottom:10px;
+		display:inline-block;
+		font-family: 'proxima_nova_rgregular';
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-size:14px;
+		font-weight:bold;
+		}	
+		
+	#topbanner{
+		padding-top:120px;
+	}	
+	
+	.gform_wrapper .top_label .gfield_label{display:none}
+	
+	blockquote {color:#255592;
+		border-top:solid 1px #ddd;
+		border-bottom:solid 1px #ddd;
+		width:35%;
+		margin:0 auto 50px;
+		padding:20px 80px;
+		font-family: 'AGaramondPro-Regular';
+		font-size:24px;
+		text-align:center;
+		}
+	
+		.italic{font-family: 'AGaramondPro-Regular';
+		text-transform:none;
+		font-size:16px;
+		font-style:italic;
+		font-weight:normal;}
+		
+	.divider{background:#000;
+		height:1px;
+		width:40px;
+		margin:auto;
+		clear:both;}
+		
+	.bold	{
+		font-family: 'proxima_nova_rgregular';
+		letter-spacing:2px;
+		font-size:14px;}	
+	
+	.square	{
+		font-family: 'proxima_nova_rgregular';
+		letter-spacing:2px;
+		width:auto;
+		margin:30px auto;
+		clear:both;
+		text-align:center;}	
+	
+	.square span{border:solid 1px #000;
+		padding:10px 30px;
+		font-size:14px;
+		text-transform:uppercase;
+		font-weight:bold;
+		display:inline-block;}
+		
+	
+		
+	.feastmain .holder{width:95%;
+		max-width:935px;
+		margin:auto;}	
+	
+	.feastmain .section{width:100%;
+		padding:60px 0;
+		opacity:0;
+		}
+		
+	.feastmain  a.secondary{
+		color:#fff !important;
+		display:inline-block;
+		margin:20px 0 40px;
+		font-family: 'proxima_nova_rgregular';
+		letter-spacing:2px;
+		text-transform:uppercase;
+		font-size:12pt;
+		font-weight:bold;
+		padding:10px;
+		border:solid 1px #ef7061;
+		background:#ef7061;
+		border:none;
+		border: solid 1px #ef7061;}
+		
+	.feastmain  a.secondary:hover{
+		color:#ef7061 !important;
+		border: solid 1px #ef7061;
+		text-decoration:none;
+		background:transparent;}
+		
+			
+		.testimonial_container{	
+			max-width:500px;
+			background:#fff;
+		}
+		
+		#fancybox-close{
+			background:url(../img/icon_close-x.png) no-repeat !important;
+			top:15px !important;
+			right:15px !important;
+			width:15px !important;
+			height:15px !important;
+		}
+		
+		.testimonial_container p{
+			padding:30px 30px 0;
+			font-size:12px;
+		}
+
+		.testimonial_container .author{
+			font-family:'proxima_nova_rgregular';
+			letter-spacing:2px;
+			text-transform:uppercase;
+			text-align:center;
+			margin-bottom:20px;
+			font-size:12px;
+		}
+		
+		.testimonial_container .divider{
+			margin:20px auto;
+		}
+		
+		::-webkit-input-placeholder {
+		color: #000;
+		font-family: 'AGaramondPro-Regular';
+		font-size:14px;
+		font-style:italic;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		color: #000;
+		font-family: 'AGaramondPro-Regular';
+		font-size:14px;
+		font-style:italic;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		color: #000;
+		font-family: 'AGaramondPro-Regular';
+		font-size:14px;
+		font-style:italic;
+		}
+
+		:-ms-input-placeholder {  
+		color: #000;
+		font-family: 'AGaramondPro-Regular';
+		font-size:14px;
+		font-style:italic;
+		}
+		
+/* ==========================================================================
+  MENU
+   ========================================================================== */	
+   
+   
+ 
+   
+#mobile-nav, #mobile-menu{
+	display:none;
+}
+
+#navigation  {position:relative;
+		z-index:999999;}   
+
+.fixed#navigation   {position:fixed;}   
+
+.fixed#navigation #mobile-menu{
+	position:fixed;
+}
+
+#navigation #mobile-menu{
+	position:absolute;
+}
+
+#nav-bar{
+	background:#f5ece7;
+	padding:10px;
+}
+
+#nav-bar a.logo{
+	display:block;
+	float:left;
+	width:15%;
+	padding-right:19px;
+}
+
+#nav-bar ul{padding:0;
+	margin:0;
+	text-align:center;}
+	
+#nav-bar li{padding:0 19px;
+	margin:0;
+	display:inline-block;}
+
+#nav-bar li a{
+	font-family: 'proxima_nova_rgregular';
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:bold;
+	color:#000;
+}
+
+#nav-bar li a:hover{
+	color:#ef7061;
+}
+
+#nav-bar li.secondary{	
+	background:#ef7061;
+	border:solid 1px #ef7061;
+}
+
+#nav-bar li.secondary > a{
+	color:#fff !important;
+	text-decoration:none;
+	display:block;
+	line-height:30px;}
+	
+#nav-bar li.secondary:hover{
+	background:transparent;
+	border:solid 1px #ef7061;
+}	
+	
+#nav-bar li.secondary:hover > a{
+	color:#ef7061!important;}	
+	
+#mobile-menu{
+	width:100%;
+	top:40px;
+	background:#fff;
+
+}	
+
+#mobile-menu ul{padding:0;
+	margin:0;
+	text-align:center;}
+	
+#mobile-menu li{padding:0 19px;
+	margin:0;
+	display:block;}
+
+#mobile-menu li a{
+	font-family: 'proxima_nova_rgregular';
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:bold;
+	color:#000;
+}
+
+#mobile-menu li a:hover{
+	color:#ef7061;
+}
+
+#mobile-menu li.secondary{	
+	background:#ef7061;
+	border:solid 1px #ef7061;
+}
+
+#mobile-menu li.secondary > a{
+	color:#fff !important;
+	text-decoration:none;
+	display:block;
+	line-height:30px;}
+	
+#mobile-menu li.secondary:hover{
+	background:transparent;
+	border:solid 1px #ef7061;
+}	
+	
+#mobile-menu li.secondary:hover > a{
+	color:#ef7061!important;}	
+	
+	
+#mobile-nav-icon{
+	float:right;
+	display:block;
+}
+	
+#mobile-nav-icon  ul{
+	background:#ef7061;
+	padding:2px;
+	margin:0;
+	width:25px;
+	height:25px;
+	list-style:none;
+}
+
+#mobile-nav-icon  ul li{
+	margin:3px 0;
+	padding:0;
+	background:#f5ece7;
+	height:3px;
+	width:100%;
+	display:block;
+	list-style:none;
+	
+}
+		
+		
+/* ==========================================================================
+  INTRO
+   ========================================================================== */
+.feastmain .section#intro {
+  background: url(../img/image_background-1.png) center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 70vh;
+  color: #2b2b2b;
+  padding:0;
+  font-size:14px;
+  opacity:1;
+}
+.feastmain .section#intro .container{
+ max-width: 1170px;
+  margin:0 auto;
+}
+
+.feastmain .section#intro .navtop {
+  margin-top: 15px;
+}
+.feastmain .section#intro .backto {
+  text-transform: uppercase;
+  font-family: "soleil", sans-serif;
+  letter-spacing: 1.5px;
+}
+.feastmain .section#intro .backto img {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+}
+.feastmain .section#intro .title {
+  text-align: center;
+}
+.feastmain .section#intro .subtitle {
+  text-transform: uppercase;
+  font-family: "soleil", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 10px 0;
+  font-size: 17px;
+}
+.feastmain .section#intro .signature {
+  font-family: "adobe-garamond-pro", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 100;
+}
+.feastmain .section#intro .logo {
+  margin: 65px 0;
+} 		
+
+
+/* ==========================================================================
+   Section 1
+   ========================================================================== */
+   
+   .feastmain .section#section1 .holder{
+	width:75%;
+	max-width:700px;
+	font-size:14px;}
+   
+/* ==========================================================================
+   Section 2
+   ========================================================================== */
+
+   .feastmain .section#section2{
+   background:url(../img/image_background-2.png);
+   -webkit-background-size: cover;
+   background-size: cover;
+   font-family: "adobe-garamond-pro", sans-serif;
+   text-align:center;}
+   
+   .feastmain .section#section2 .holder{
+   width:75%;
+   max-width:700px;}
+   
+   .feastmain .section#section2 h2{
+   color:#fff;
+   margin:20px;
+   }
+   
+   .feastmain .section#section2 .underline span{
+   color:#fff;
+   border-bottom:solid 1px #fff;}
+   
+/* ==========================================================================
+   Section 3
+   ========================================================================== */
+
+   .feastmain .section#section3{text-align:center;}
+   
+   .feastmain .section#section3 .holder{
+   width:75%;
+   max-width:700px;}
+   
+   .feastmain .section#section3 h2{
+   margin:20px;
+   }
+   
+   .feastmain .section#section3 ul{
+   padding:30px;
+   margin:0;
+   background:#f7f0ed;
+   text-align:left;
+   list-style:disc inside;
+   font-size:14px;
+   }
+   
+   .feastmain .section#section3 li{
+   list-style:disc inside;
+   padding:10px 0;
+   margin:0;
+   }
+   
+   .feastmain .section#section3 h2{
+   text-align:center;
+   }
+   
+  
+	
+	/* ==========================================================================
+   Section 4
+   ========================================================================== */
+
+   .feastmain .section#section4{text-align:center;
+	background: url(../img/image_background-3.png) center no-repeat;
+	-webkit-background-size: cover;
+    background-size: cover;
+	color:#fff;
+	font-size:14px;}
+	
+	.feastmain .section#section4 .holder{
+	width:75%;
+	max-width:700px;
+	}
+	
+	.feastmain .section#section4 .underline span{border-bottom:solid 1px #fff;}
+	
+	/* ==========================================================================
+   Section 5
+   ========================================================================== */
+   
+   .feastmain .section#section5{
+   background:#f5ece7;
+   font-family: "adobe-garamond-pro", sans-serif;
+	}
+	
+	.feastmain #section5_left{
+	text-align:center;
+	border-right:solid 1px #000;
+	
+	}
+	
+	.feastmain #section5_left img{
+	margin-bottom:20px;
+	}
+	
+	.feastmain #section5_content{
+	width:75%;
+	text-align:center;
+	margin:50px auto 30px;
+	}
+	
+	.feastmain #section5_content p{
+	padding:0 15%
+	
+	}
+	
+	.feastmain .section#section5 ul{
+   padding:30px;
+   margin:20px auto;
+   background:#f0e3dc;
+   text-align:left;
+   list-style:disc inside;
+   
+   font-size:14px;
+   }
+   
+   .feastmain .section#section5 li{
+   list-style:disc inside;
+   padding:10px 0;
+   margin:0;
+   font-family: 'proxima_nova_rgregular';
+   }
+		
+/* ==========================================================================
+   Section 6
+   ========================================================================== */
+   
+   .feastmain .section#section6{
+	font-family: "adobe-garamond-pro", sans-serif;
+	font-size:16px;}
+	
+	.feastmain .section#section6 .holder{
+	max-width:700px;
+	text-align:center;
+	}
+	
+	.feastmain .section#section6 .holder p{
+	width:75%;
+	margin:10px auto;
+	}
+	
+/* ==========================================================================
+   Section 7
+   ========================================================================== */
+   
+   .feastmain .section#section7{
+   font-family: "adobe-garamond-pro", sans-serif;
+    background:url(../img/image_background-4.png);
+	-webkit-background-size: cover;
+    background-size: cover;
+	}
+	
+	.feastmain .section#section7 .underline{text-align:left;}
+
+	.feastmain .section#section7 ul{
+	margin:0 auto;
+	padding:30px;
+	list-style:none;
+	
+	}
+	
+	.feastmain .section#section7 li:first-child{padding-top:0;}
+	
+	.feastmain .section#section7 li{
+	margin:0;
+	padding:10px;
+	list-style:none;
+	}
+	
+	.feastmain .section#section7 li h2{
+	font-weight:normal;
+	}
+	
+/* ==========================================================================
+   Section 8
+   ========================================================================== */
+   
+   .feastmain .section#section8{
+   font-family: "adobe-garamond-pro", sans-serif;
+   background:#fad6d1;
+	}
+	
+	.feastmain .section#section8 .underline{text-align:left;}
+
+	.feastmain .section#section8 ul{
+	margin:0 auto;
+	padding:30px;
+	list-style:none;
+	
+	}
+
+	
+	.feastmain .section#section8 li{
+	margin:0;
+	padding:10px;
+	list-style:none;
+	}
+	
+	.feastmain .section#section8 li:first-child{padding-top:0;}
+	
+	.feastmain .section#section8 li h2{
+	font-weight:normal;
+	}	
+	
+/* ==========================================================================
+   Section 9
+   ========================================================================== */
+   
+	.feastmain .section#section9{
+	padding-top:10px;
+	}
+	
+	.feastmain .section#section9 .square{text-align:left;}
+   
+	.feastmain .section#section9 ul{
+	 text-align:center;
+	 list-style:none;
+	 margin:20px 0;
+	 padding:0;
+	 }
+	 
+	 .feastmain .section#section9 li{
+	 width:29%;
+	 list-style:none;
+	 display:inline-block;
+	 margin:0;
+	 padding:1.5%;
+	 font-family: "adobe-garamond-pro", sans-serif;
+	 vertical-align:top;
+	 }
+	 
+	 .feastmain .section#section9 h2{text-align:center;
+		width:50%;
+		margin:auto;}
+	 
+	 .feastmain .section#section9 ul#small_bubbles li{
+	 width:19%;
+	 }
+	 
+	 .feastmain .section#section9 ul#small_bubbles li p{
+	 font-style:italic;
+	 
+	 }
+	 
+	 .feastmain .section#section9 ul#small_bubbles li h2{
+	 font-size:10px;
+	 color:#ef7061;
+	 width:100%;
+	 }
+   
+ /* ==========================================================================
+   Section 10
+   ========================================================================== */
+    
+	.feastmain .section#section10{
+	background:#9fb6db;
+	font-family: 'AGaramondPro-Regular';
+	}
+	
+	.feastmain .section#section10 .square{
+	text-align:left;
+	}
+	.feastmain .section#section10 .square span{
+	border:solid 1px #fff;
+	color:#fff;
+	}
+	
+	.feastmain .section#section10 #section10_left{
+	
+	}
+   	
+	.feastmain .section#section10 #section10_right{
+	padding-top:20%;
+	font-size:14px;
+	}
+	
+ /* ==========================================================================
+   Section 11
+   ========================================================================== */
+    
+	.feastmain .section#section11{
+	background:url(../img/image_background-3.png) center no-repeat;
+	-webkit-background-size: cover;
+    background-size: cover;
+	font-family: 'AGaramondPro-Regular';
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	}	
+	
+	.feastmain .section#section11 .square span{
+	border:solid 1px #fff;
+	color:#fff;
+	}
+	
+	.feastmain .section#section11 .underline{
+	color:#fff;
+	}
+	
+	.feastmain .section#section11 .underline span{
+	border-bottom:solid 1px #fff;
+	}
+
+/* ==========================================================================
+   Section 12
+   ========================================================================== */
+
+   .feastmain .section#section12{
+    background:url(../img/image_background-2.png);
+	-webkit-background-size: cover;
+    background-size: cover;
+   font-family: "adobe-garamond-pro", sans-serif;
+   text-align:center;
+   }
+
+	.feastmain .section#section12 h2{
+	color:#fff;
+	margin-bottom:30px;
+	padding:0 25%;
+	}
+	
+	.feastmain .section#section12 .bold{
+	color:#fff;
+	}
+	
+	.feastmain .section#section12 .underline{
+	color:#fff;
+	}
+	
+	.feastmain .section#section12 .underline span{
+	border-bottom:solid 1px #fff;
+	}
+
+/* ==========================================================================
+   Section 13
+   ========================================================================== */
+
+	.feastmain .section#section13{
+	background:#fbe6e3;
+	font-family: "adobe-garamond-pro", sans-serif;}
+	
+	.feastmain .section#section13 .bold{
+	color:#ef7061;
+	}
+	
+	.feastmain .section#section13 .square{
+	text-align:left;
+	margin-top:0;
+	}
+	
+	.feastmain .section#section13 .underline{
+	color:#000;
+	text-align:left;
+	margin-top:0;
+	}
+	
+	.feastmain .section#section13 .underline span{
+	border-bottom:solid 1px #000;
+	}
+	
+/* ==========================================================================
+   Section 14
+ ========================================================================== */	
+ 
+	.feastmain .section#section14{
+		background:#e3e1e1
+		}
+		
+	.feastmain .section#section14 .underline{
+		margin:0;
+	}	
+	
+	.feastmain .section#section14 .testimonials{
+			margin:0;
+			padding:0;
+			text-align:center;
+			width:100%;
+			list-style:none;
+		}
+		
+		.feastmain .section#section14 .testimonials li{
+			margin:.5%;
+			padding:3%;
+			text-align:left;
+			width:32%;
+			list-style:none;
+			display:inline-block;
+			background:#fff;
+			vertical-align:top
+		}
+		
+		.feastmain .section#section14 .testimonials li a{
+			color:#000;
+			text-decoration:none;
+			font-size:12px;
+		}
+		
+		.feastmain .section#section14 .testimonials li .divider{
+			margin:10px auto;
+		}
+		
+		.feastmain .section#section14 .testimonials li .author{
+			font-family:'proxima_nova_rgregular';
+			letter-spacing:1px;
+			text-transform:uppercase;
+			text-align:center;
+		}
+		
+		.feastmain .section#section14 .testimonials li .readmore{
+			font-family:'proxima_nova_rgregular';
+			letter-spacing:1px;
+			text-transform:uppercase;
+			text-align:left;
+		}
+		
+		.feastmain .section#section14 .testimonials.testimonials_hidden{
+			display:none;
+		}
+		
+		.feastmain .section#section14 .testimonials .testimonial_holder.full{
+			display:none;}
+			
+		.feastmain .section#section14  #viewmore, .feastmain .section#section14 	#viewless{margin-top:50px;}
+		
+		
+		.feastmain .section#section14 	#viewmore a{
+			font-family:'proxima_nova_rgregular';
+			letter-spacing:1px;
+			font-size:14px;
+			text-align:center;
+			display:block;
+			text-transform:uppercase;
+			color:#000;
+			font-weight:bold;
+			line-height:14px;
+			padding-bottom:15px;
+			background:url(../img/icon_arrow-more.png) bottom center no-repeat;
+		}
+		
+		.feastmain .section#section14 #viewmore img{display:block;}
+		
+		.feastmain .section#section14  #viewless{
+			display:none;
+		}
+		
+		.feastmain .section#section14 #viewless img{display:block;}
+		
+		.feastmain .section#section14 #viewless a{
+			font-family:'proxima_nova_rgregular';
+			letter-spacing:1px;
+			font-size:14px;
+			text-align:center;
+			display:block;
+			text-transform:uppercase;
+			color:#000;
+			font-weight:bold;
+			line-height:14px;
+			padding-top:15px;
+			background:url(../img/icon_arrow-less.png) top center no-repeat;
+		}	
+			
+		.feastmain .section#section14 .bx-wrapper {width:80%;
+				margin:auto;
+				}
+		
+			.feastmain .section#section14 .bx-wrapper .bx-viewport{
+				border:none;
+				box-shadow:none;
+				background:transparent;
+			}	
+			
+			.feastmain .section#section14 .bx-wrapper .bx-prev{
+				background:url('../img/icon_arrow-left.png') no-repeat center center;
+			}
+			
+			.feastmain .section#section14 .bx-wrapper .bx-next{
+				background:url('../img/icon_arrow-right.png')no-repeat center center;
+			}
+			
+			.feastmain .section#section14 .bx-wrapper .bx-pager{
+				display:none;
+			}
+			
+			.feastmain .section#section14 .bx-wrapper .bx-pager a{
+				background:#ef7061;}
+			
+			.feastmain .section#section14 .bx-wrapper .bx-pager a.active{
+				background:#fff;
+			}
+			
+			.feastmain .section#section14 .testimonial_slider li{
+				display:inline-block;
+				margin:auto;
+			}
+			
+		
+			.feastmain .section#section14 .testimonial_slider li .testimonial_holder{
+				background:#fff;
+				padding:60px 20px;
+				width:100%;
+				margin:40px auto 0;
+				text-align:center;
+				position:relative;
+				}
+			
+			.feastmain .section#section14 .testimonial_slider li .testimonial_holder p{	
+				font-family: 'AGaramondPro-Regular';
+				font-size:16px;
+			}
+			
+			.feastmain .section#section14 .testimonial_slider li .testimonial_holder h2{
+				text-align:center;
+				padding:20px 0;
+			}
+			
+			.feastmain .section#section14 .testimonial_slider li .testimonial_holder #testimonial_before{
+				border-right:solid 1px #000;
+				width:49%;
+				padding: 0 5%;
+			}
+			
+			.feastmain .section#section14 .testimonial_slider li .testimonial_holder #testimonial_after{
+				width:49%;
+				padding:0 5%;
+			}
+			
+			.feastmain .section#section14 .testimonial_slider li .author{
+				margin-top:15px;
+				font-family: 'proxima_nova_rgregular';
+				text-transform:uppercase;
+				font-size:12px;
+			}
+			
+			
+		
+	
+/* ==========================================================================
+   Section 15
+ ========================================================================== */
+ 
+ .feastmain .section#section15{
+	background:#fff;
+ }
+ 
+ 
+ 
+ .feastmain .section#section15 .underline{
+	color:#ef7061;
+	margin-top:0;
+	}
+	
+	.feastmain .section#section15 .underline span{
+	border-bottom:solid 1px #ef7061;
+	}
+ 
+ .feastmain .section#section15 ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+ }
+  
+  .feastmain .section#section15 li{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:inline-block;
+	width:48%;
+	padding:1%;
+	vertical-align:top;
+	font-size:14px;
+	}
+	
+	.feastmain .section#section15 li:nth-child(2+1){
+	clear:left;
+	font-family: 'proxima_nova_rgregular';
+	letter-spacing:1px;
+	font-size:14px;
+	
+	}
+	
+	
+/* ==========================================================================
+   Section 16
+ ========================================================================== */
+ 
+ .feastmain .section#section16{
+	text-align:center;
+	font-family: "adobe-garamond-pro", sans-serif;
+ }
+ 
+ .feastmain .section#section16 .holder{
+	width:75%;
+	max-width:700px;
+ }
+ 
+ .feastmain .section#section16 img{
+	margin:auto;
+ }
+
+/* ==========================================================================
+   Footer
+ ========================================================================== */
+ 
+ .backto, .spacebottom{font-size:14px;}
+ 
+ .feastmain .section#footer{
+  text-align: center;
+  background: #f5ece7;
+  padding: 40px 0;
+  text-transform: uppercase;
+  font-family: "soleil", sans-serif;
+  letter-spacing: 1.5px;
+  opacity:1;
+}
+ .feastmain .section#footer img {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+ .feastmain .section#footer .socials img {
+  margin: 0 10px;
+}
+
+.sidebar{display:none;}
+
+
+/* ==========================================================================
+   Responsive
+ ========================================================================== */
+ 
+ @media only screen 
+and (max-width : 1023px) {
+}
+ 
+ @media only screen 
+and (max-width : 850px) {
+
+
+#nav-bar a.logo{
+	padding-right:8px;
+}
+
+#nav-bar li{padding:0 8px;
+}
+
+
+
+}
+
+
+ @media only screen 
+and (max-width :640px) {
+
+.half{width:100% !important;}
+
+#mobile-nav{
+	display:block;
+}
+
+ 
+ #full-menu{
+	display:none;
+	
+ }
+ 
+ .feastmain .section#section14 .testimonial_slider li .testimonial_holder #testimonial_before{
+	border-right:none;
+	border-bottom: solid 1px #000;
+ }
+ 
+ .feastmain #section5_left{
+	border-right:none;
+ }
+ 
+ .feastmain .section#section14 .bx-wrapper{
+	width:100%;
+ }
+ 
+ .feastmain .section#section14 .testimonials li{
+	width:100%;
+ }
+ 
+ }
+
+ @media only screen 
+and (max-width :480px) {
+
+.feastmain .section#section9 ul li{
+	 width:100%;
+	 }
+
+ .feastmain .section#section9 ul#small_bubbles li{
+	 width:31%;
+	 }
+	 
+.feastmain .section#section15 li{
+	width:100%;
+}	 
+
+.feastmain .section#section9 h2{
+	width:100%;
+}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles.
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+		height:auto !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

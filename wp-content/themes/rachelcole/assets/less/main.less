@@ -1,0 +1,320 @@
+// Bootstrap
+@import "_bootstrap";
+
+// Variable overrides and custom variables
+@import "_variables";
+
+// Roots
+@import "_global";                   // Base styling & custom mixins
+@import "components/_buttons";       // Button tweaks
+@import "components/_comments";      // Comment styling
+@import "components/_forms";         // Form tweaks
+@import "components/_media";         // WordPress media
+@import "components/_wp-classes";    // WordPress generated classes
+@import "layouts/_general";          // General styling
+@import "layouts/_header";           // Header styling
+@import "layouts/_sidebar";          // Sidebar styling
+@import "layouts/_footer";           // Footer styling
+@import "layouts/_pages";            // Page styling
+@import "layouts/pages/_home";       // Home page styling
+@import "layouts/_posts";            // Post styling
+
+// Basics
+
+.vertical-center {
+	min-height: 100%;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.littleline {
+	height: 1.5px;
+	background: @black;
+	max-width: 75px;
+	margin: 25px auto;
+}
+
+a {
+	color: inherit !important;
+}
+
+@black: #2b2b2b;
+@tan: #f5ece7;
+
+// Part 1 
+
+.one {
+	background: url(/wp-content/themes/rachelcole/assets/img/image_background-1.png) center no-repeat;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+	color: @black;
+	.navtop {
+		margin-top: 15px;
+	}
+	.backto {
+		text-transform: uppercase;
+		font-family: "soleil",sans-serif;
+		letter-spacing: 1.5px;
+		img {
+			position: relative;
+			top: -1px;
+			margin-right: 5px;
+		}
+	}
+	.title {
+		text-align: center;
+	}
+	.subtitle {
+		text-transform: uppercase;
+		font-family: "soleil",sans-serif;
+		letter-spacing: 1.5px;
+		margin: 10px 0;
+		font-size: 17px;
+	}
+	.signature {
+		font-family: "adobe-garamond-pro",sans-serif;
+		font-style: italic;
+		font-size: 16px;
+		font-weight: 100;
+	}
+	.logo {
+		margin: 65px 0;
+	}
+}
+
+// Part 2
+
+.two {
+	text-align: center;
+	padding: 45px 0;
+	p {
+		font-family: "adobe-garamond-pro",sans-serif;
+		font-size: 30px;
+	}
+	.smalltext {
+		text-transform: uppercase;
+		font-family: "soleil", sans-serif;
+		letter-spacing: 1.5px;
+		margin: 10px 0;
+		font-size: 17px;
+	} 
+}
+
+// Part 3
+
+.three {
+	background: url(/wp-content/themes/rachelcole/assets/img/image_background-2.png) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 35px 0;
+	h1 {
+		color: #fff;
+		font-family: "adobe-garamond-pro",sans-serif;
+		letter-spacing: 2.5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	p {
+		color: @black;
+		text-transform: uppercase;
+		font-family: "soleil",sans-serif;
+		letter-spacing: 1.5px;
+	}
+}
+
+// Part 4
+
+.four {
+	background: @tan;
+	font-family: "adobe-garamond-pro",sans-serif;
+	font-size: 20px;
+	padding: 55px 0;
+	p {
+		margin-top: 22px;
+	}
+	.rachelname {
+		text-align: center;
+		border-right: 1.5px solid black;
+		text-transform: uppercase;
+		font-family: "soleil", sans-serif;
+		letter-spacing: 1.5px;
+		margin: 10px 0;
+		font-size: 17px;
+		img {
+			padding: 25px;
+		}
+		span {
+			font-family: "adobe-garamond-pro", sans-serif;
+			font-style: italic;
+			font-size: 16px;
+			font-weight: 100;
+			text-transform: none;
+		}
+	}
+}
+
+// Part 5
+
+.five {
+	background: url(/wp-content/themes/rachelcole/assets/img/image_background-3.png) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 55px 0;
+	font-family: "adobe-garamond-pro",sans-serif;
+	font-size: 25px;
+	color: #fff;
+	.button {
+		border: 1px solid white;
+		max-width: 470px;
+		padding: 11px 10px;
+		color: white;
+		text-transform: uppercase;
+		font-family: "soleil",sans-serif;
+		letter-spacing: 1.5px;
+		margin: 0 auto 30px auto;
+		font-size: 20px;
+	}
+	.smalltext {
+		font-family: "soleil",sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-size: 17px;
+		margin-top: 40px;
+		text-decoration: underline;
+	}
+}
+
+// Part 6
+
+.six {
+	background: url(/wp-content/themes/rachelcole/assets/img/image_background-4.png) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 35px 0;
+	p {
+		font-family: "adobe-garamond-pro", sans-serif;
+		font-size: 30px;
+	}
+	.smalltext {
+		font-family: "soleil",sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-size: 17px;
+		margin-top: 40px;
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+// Part 7
+
+.seven {
+	background: #fdfcfa;
+	text-align: center;
+	padding: 45px 0;
+	p {
+		font-family: "adobe-garamond-pro", sans-serif;
+		font-size: 30px;
+		font-size: 22px;
+		line-height: 20px;
+	}
+	img {
+		margin-top: 20px;
+	}
+	.smalltext {
+		font-family: "soleil",sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-size: 17px;
+		margin-top: 40px;
+		color: #000;
+	}
+	form {
+		margin-top: 45px;
+		input {
+			width: 20%;
+			border:none;
+			border-bottom: 1.5px solid @black;
+			font-family: "adobe-garamond-pro", sans-serif;
+			font-style: italic;
+			margin-right: 15px;
+			background: transparent;
+		}
+		button {
+			background: #f7705d;
+			border: none;
+			padding: 10px 18px;
+			text-transform: uppercase;
+			color: #fff;
+			font-family: "soleil",sans-serif;
+			letter-spacing: 1.5px;
+			margin-top: 25px;
+		}
+	}
+}
+
+// Part 8
+
+.eight {
+	text-align: center;
+	background: #f5ece7;
+	padding: 40px 0;
+	text-transform: uppercase;
+	font-family: "soleil", sans-serif;
+	letter-spacing: 1.5px;
+	img {
+		margin-right: 5px;
+		position: relative;
+		top: -1px;
+	}
+	.socials img {
+		margin: 0 10px;
+	}
+}
+
+// Media
+
+@media (max-width: @screen-lg-min) { 
+
+}
+
+@media (max-width: @screen-md-min) { 
+
+}
+
+@media (max-width: @screen-sm-min) { 
+
+	.vertical-center {
+		display: inherit !important;
+	}
+
+	.five {
+		.button {
+			font-size: 15px;
+		}
+	}
+
+	.seven {
+		p {
+			line-height: 31px;
+		}
+		input {
+			width: 80% !important;
+			margin-bottom: 15px;
+		}
+	}
+	
+	.eight {
+		.spacebottom {
+			margin-bottom: 25px;
+		}
+	}
+
+}
