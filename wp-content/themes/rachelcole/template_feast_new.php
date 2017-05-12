@@ -1,5 +1,6 @@
 <?php
 /*
+// **   CURRENT
 Template Name: New Feast Page 2016
 */
 ?>
