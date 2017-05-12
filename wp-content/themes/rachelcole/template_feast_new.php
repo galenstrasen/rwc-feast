@@ -16,42 +16,42 @@ Template Name: New Feast Page 2016
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-		
+
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/assets/css/new_feast.css" media="all">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="<?php bloginfo('template_url')?>/assets/js/main.js"></script>
 		<script src="<?php bloginfo('template_url')?>/assets/js/jquery.bxslider/jquery.bxslider.min.js"></script>
 		<link href="<?php bloginfo('template_url')?>/assets/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
-		
-		
-<script type="text/javascript"> 
-$(document).ready(function(){ var j = jQuery.noConflict(); 
 
-$('.testimonial_slider').bxSlider({ 
+
+<script type="text/javascript">
+$(document).ready(function(){ var j = jQuery.noConflict();
+
+$('.testimonial_slider').bxSlider({
 auto:true,
 speed: 2000,
 pause:6000,
 mode:'fade'
-}); 
+});
 
-$('.testimonial_slider_new').bxSlider({ 
+$('.testimonial_slider_new').bxSlider({
 auto:true,
 speed: 500,
 pause:6000,
 mode:'fade',
 pager:true
 
-}); 
+});
 
-}); 
+});
 </script>
 	<div class="header2">
 				<div class="holder clearfix">
 					<div class="logo">
-						 <a class="sol return-link" href="http://rachelwcole.com"><img src="/wp-content/themes/rachelcole/assets/img/icon_arrow.png" alt=""> Return to rachelwcole.com</a>
+						 <a class="sol return-link" href="http://rachelwcole.com"><span class="return-text">Return to rachelwcole.com</span></a>
 					</div>
-					
+
 				</div>
 			</div>
         <div class="main">
@@ -60,7 +60,7 @@ pager:true
 					<div class="row">
 						<div class="col-sm-4">
                 			<div class="return-btn">
-                			  
+
     	        			</div>
 						</div>
 						<div class="col-sm-8">
@@ -93,7 +93,7 @@ pager:true
                         <li><a href="#about">ABOUT RACHEL</a></li>
                         <li><a href="#Schedule">SCHEDULE</a></li>
                         <li><a href="#incl">WHAT'S INCLUDED</a></li>
-						
+
                         <li><a href="#invest">INVESTMENT</a></li>
 						<li><a href="#praise">PRAISE</a></li>
                         <li><a href="#faqsection">FAQs</a></li>
@@ -106,18 +106,18 @@ pager:true
                   </div><!-- /.container-fluid -->
             </nav>
 <div id="signup-box-popup-holder">
-						<div id="signup-box-popup">	
+						<div id="signup-box-popup">
 								<div id="newsletter_signup">
 									<?php gravity_form( 1, false, true, false, '', true );?>
 								</div>
-						</div>	
+						</div>
 					</div>
             <section class="section1 section">
                 <div class="container-fluid container-sm">
                     <div class="row">
                         <div class="col-md-12">
                           <div id="section1" class="section">
-	
+
 								<?php the_field('section_1_content')?>
 
                         </div>
@@ -125,7 +125,7 @@ pager:true
 						</div>
                     </div>
                 </div>
-				
+
             </section>
 
             <section class="section2 section agp">
@@ -148,7 +148,7 @@ pager:true
                     <?php the_field('section_4_content')?>
 					<a name="about"></a>
                 </div>
-				
+
             </section>
             <section class="section5 section agp">
                 <div class="container-fluid ta-center">
@@ -163,9 +163,9 @@ pager:true
                     </div>
                     <div class="container-fluid container-sm ta-center">
                         <?php the_field('section_5_content_bottom')?>
-                    </div>                    
+                    </div>
                 </div>
-				
+
             </section>
 
             <section class="section6 section">
@@ -173,7 +173,7 @@ pager:true
                    <?php the_field('section_6_content')?>
 
                 </div>
-				
+
 			<a name="Schedule"></a>
             </section>
 
@@ -190,7 +190,7 @@ pager:true
                             </div>
                             <?php endwhile?>
                         </div>
-                    	
+
 					</div>
                 </div>
             </section>
@@ -201,33 +201,33 @@ pager:true
                         <div class="col-md-5">
                             <h3 class="cal-main-title mt0">The Weekly Schedule</h3>
                         </div>
-						
+
                         <div class="col-md-6 col-md-push-1">
 						<?php while(have_rows('section_8_schedule')):the_row();?>
                             <div class="cal-week">
                                <?php the_sub_field('weekly_info')?>
                             </div>
                          <?php endwhile?>
-						 	
+
 						 </div>
-						 	
+
                     </div>
                 </div>
-			
+
             </section>
 <a name="incl"></a>
             <section class="section9 section">
-			
+
                 <div class="container ta-center">
-				
+
                     <p class="plus-box">PLUS</p>
-					
+
                     <div class="row">
-					
-				
+
+
                         <ul id="large_bubbles">
 			<?php while(have_rows('section_9_large_bubbles')):the_row();?>
-			
+
 				<li>
 					<?php if (get_sub_field('image')):?>
 					<img src="<?php the_sub_field('image')?>"/>
@@ -236,15 +236,15 @@ pager:true
 					<?php endif;?>
 					<p><?php the_sub_field('caption')?></p>
 				</li>
-			
+
 			<?php endwhile?>
-			
+
 		</ul>
-		
+
                     </div>
 
                    <h4 class="hungers-header"><?php the_field('section_9_content')?></h4>
-		
+
 		<ul id="small_bubbles">
 			<?php while(have_rows('section_9_small_bubbles')):the_row();?>
 				<li>
@@ -257,40 +257,40 @@ pager:true
 				</li>
 			<?php endwhile?>
 		</ul>
-		
+
 		<a name="invest"></a>
-		
+
                     </div>
-                   
-                
-				 
+
+
+
             </section>
-			
+
 			<div id="testimonials_new" class="section">
 	<div class="holder clearfix">
-			
-			
+
+
 			<ul class="testimonial_slider_new">
 						<?php while(have_rows('new_testimonials')):the_row();?>
 							<li>
-								
+
 								<div class="testimonial_new_holder">
-									
+
 									<?php the_sub_field('testimonial')?>
 									</div>
-								
+
 									<div class="clearfix"></div>
-									
-								
+
+
 							</li>
 						<?php endwhile?>
 					</ul>
-					
+
 					</div>
-				</div>	
+				</div>
 
             <section class="section10 section agp">
-			
+
                 <div class="container-fluid container-fullwidth">
                     <div class="row">
                         <div class="col-md-7 half-bg shrink-left">
@@ -337,11 +337,11 @@ pager:true
 <div id="testimonials" class="section">
 	<div class="holder clearfix">
 			<h2 class="section-last-line"><span>Praise</span></h2>
-			
+
 			<ul class="testimonial_slider">
 						<?php while(have_rows('testimonial_slider')):the_row();?>
 							<li>
-								
+
 								<div class="testimonial_holder">
 									<div id="testimonial_before" class="fleft half">
 									<h2>Before</h2>
@@ -352,7 +352,7 @@ pager:true
 									<?php the_sub_field('testimonial_after')?>
 									</div>
 									<div class="clearfix"></div>
-									
+
 								</div>
 							</li>
 						<?php endwhile?>
@@ -369,16 +369,16 @@ pager:true
 							<li>
 								<div class="testimonial_holder excerpt">
 									<a href="#<?php echo 'testimonial-id-' . $counter; ?>" class="fancybox-inline">
-										
-										<?php 
+
+										<?php
 										echo substr($testimonial, 0, strpos($testimonial," ",268)); ?>
 											<div class="readmore">...Read More</div>
 												<div class="divider"></div>
 											<div class="author"><?php the_sub_field('author')?></div>
 									</a>
 								</div>
-								
-								
+
+
 								<div class="testimonial_holder full">
 								<div id="<?php echo 'testimonial-id-' . $counter; ?>" class="testimonial_container">
 										<?php echo $testimonial ?>
@@ -395,7 +395,7 @@ pager:true
 						$testimonial = get_sub_field('testimonial');?>
 						<?php $counter++; ?>
 						<?php if( $counter > 6 ): ?>
-						
+
 							<li>
 								<div class="testimonial_holder excerpt">
 									<a href="#<?php echo 'testimonial-id-' . $counter; ?>" class="fancybox-inline">
@@ -405,8 +405,8 @@ pager:true
 											<div class="author"><?php the_sub_field('author')?></div>
 									</a>
 								</div>
-								
-								
+
+
 								<div class="testimonial_holder full">
 								<div id="<?php echo 'testimonial-id-' . $counter; ?>" class="testimonial_container">
 										<?php echo $testimonial?>
@@ -421,10 +421,10 @@ pager:true
 					<a name="faqsection"></a>
 					<div id="viewless"><a href="#">View Less</a></div>
 				</div>
-				
+
 	</div>
-	
-	
+
+
 
             <section class="section14 section" id="faq">
                 <div class="container-fluid">
@@ -432,12 +432,12 @@ pager:true
                         <h3 class="sec14-h"><?php the_field('section_15_header')?></h3>
                     </div>
                     <div class="row">
-                        
+
 							<?php $counter1 = 0 ?>
 							<ul id="faqlist">
 							<?php while(have_rows('section_15_faqs')):the_row();?>
-							
-                            <li class="faq">																
+
+                            <li class="faq">
                                 <h3 class="subtitle collapsed" data-toggle="collapse" data-target="#<?php echo $counter1?>" aria-expanded="false" >
                                     <span class="plus"></span> <?php the_sub_field('question')?>
                                 </h3>
@@ -448,8 +448,8 @@ pager:true
 							<?php $counter1++ ?>
 							<?php endwhile;?>
 							</ul>
-						      
-                        
+
+
                     </div>
                 </div>
             </section>
@@ -466,7 +466,7 @@ pager:true
                         <div class="row" style="margin-bottom: 20px;border-top: 1px solid #cdc6c2;">
                             <div class="col-md-4">
                                 <div class="vertical">
-                                    <a class="sol return-link" href="http://rachelwcole.com"><img src="/wp-content/themes/rachelcole/assets/img/icon_arrow.png" alt=""> Return to rachelwcole.com</a>
+                                    <a class="sol return-link" href="http://rachelwcole.com"><span class="return-text">Return to rachelwcole.com</span></a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -489,6 +489,6 @@ pager:true
                 </footer>
             </section>
         </div>
-		
+
     </body>
 </html>
